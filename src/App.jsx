@@ -7,6 +7,7 @@ import Dashboard from "./pages/Dashboard";
 import { Route, Routes } from "react-router-dom";
 import Products from "./pages/Produk";
 import ProductDetail from "./pages/ProductDetail";
+import Notes from "./pages/Notes";
 
 function App() {
   // const ProductDetail = React.lazy(() => import("./pages/ProductDetail"));
@@ -20,6 +21,7 @@ function App() {
           <Route path="/orders" element={<Orders />} />
           <Route path="/customers" element={<Customers />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/notes" element={<Notes />} />
           <Route path="/products/:id" element={<ProductDetail />} />
         </Routes>
       </div>

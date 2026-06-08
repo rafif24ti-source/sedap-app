@@ -2,6 +2,7 @@ import { MdFastfood } from "react-icons/md";
 import { GiNotebook } from "react-icons/gi";
 import { HiOutlineUserGroup } from "react-icons/hi";
 import { TbLayoutDashboard } from "react-icons/tb";
+import { CgNotes } from "react-icons/cg"; 
 import { Link } from "react-router-dom";
 
 export default function Sidebar() {
@@ -65,6 +66,12 @@ export default function Sidebar() {
               Products
             </Link>
           </li>
+          <li>
+            <Link id="menu-4" to="/notes" className="hover:text-hijau flex cursor-pointer items-center rounded-xl p-4 font-medium text-gray-600 hover:bg-green-200">
+              <CgNotes className="mr-4 text-xl" />
+              Notes
+            </Link>
+          </li>
         </ul>
       </div>
 
@@ -72,8 +79,7 @@ export default function Sidebar() {
       <div id="sidebar-footer" className="mt-auto">
         <div
           id="footer-card"
-          className="bg-hijau px-4 py-2 rounded-md shadow-lg mb-10 flex items-center"
-        >
+          className="bg-hijau px-4 py-2 rounded-md shadow-lg mb-10 flex items-center">
           <div id="footer-text" className="text-white text-sm">
             <span>Please organize your menus through button below!</span>
             <div
