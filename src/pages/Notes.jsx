@@ -96,7 +96,7 @@ export default function Notes() {
   return (
     <div className="max-w-2xl mx-auto p-6">
       <div className="mb-6">
-        <h2 className="text-3xl font-bold text-gray-800 mb-2">Notes App</h2>
+        <h2 className="text-3xl font-bold text-gray-800 mb-2">Notes App hari senin</h2>
       </div>
 
       {error && <AlertBox type="error">{error}</AlertBox>}
